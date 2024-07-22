@@ -25,7 +25,16 @@ class _ExibeAnoState extends State<ExibeAno> {
           ),
           backgroundColor:Colors.green
         ),
-        body: Text("Sua idade é ${argumentos.idade}"),
+        body:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text("Você tem ${argumentos.idade} anos!", 
+              style: const TextStyle(color: Color.fromARGB(255, 99, 36, 186)), 
+              textAlign: TextAlign.center
+            ),
+          ],
+        ),
       ),
     );
   }
